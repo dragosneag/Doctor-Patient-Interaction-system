@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.project.model</OriginalElement>
+  <nodes>
+    <node x="67.48097754726894" y="252.0">com.project.model.Patient</node>
+    <node x="107.56924019607845" y="532.0">com.project.model.Appointment</node>
+    <node x="227.05654761904756" y="774.0">com.project.model.Doctor</node>
+    <node x="110.5545069590336" y="1032.0">com.project.model.Nurse</node>
+    <node x="3.1428571428571104" y="0.0">com.project.model.Account</node>
+    <node x="371.48097754726894" y="543.0">com.project.model.Specialty</node>
+    <node x="548.5253796831232" y="0.0">com.project.model.Prescription</node>
+    <node x="212.0126871060924" y="11.0">com.project.model.MedicalHistory</node>
+    <node x="412.48097754726894" y="307.0">com.project.model.AvailableServices</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.project.model.Specialty" target="com.project.model.AvailableServices">
+      <point x="-88.0" y="-60.0" />
+      <point x="415.48097754726894" y="507.0" />
+      <point x="442.8143108806023" y="507.0" />
+      <point x="-60.666666666666686" y="60.0" />
+    </edge>
+    <edge source="com.project.model.Patient" target="com.project.model.Prescription">
+      <point x="52.08333333333334" y="-115.0" />
+      <point x="244.56431088060228" y="202.0" />
+      <point x="558.5253796831232" y="202.0" />
+      <point x="-70.0" y="71.0" />
+    </edge>
+    <edge source="com.project.model.Nurse" target="com.project.model.Account">
+      <point x="-39.25" y="-82.0" />
+      <point x="149.8045069590336" y="1007.0" />
+      <point x="21.714285714285666" y="1007.0" />
+      <point x="21.714285714285666" y="232.0" />
+      <point x="13.0" y="232.0" />
+      <point x="-59.14285714285711" y="71.0" />
+    </edge>
+    <edge source="com.project.model.Doctor" target="com.project.model.Account">
+      <point x="-102.94117647058812" y="-104.0" />
+      <point x="249.11537114845945" y="744.0" />
+      <point x="43.714285714285666" y="744.0" />
+      <point x="43.714285714285666" y="232.0" />
+      <point x="52.42857142857139" y="232.0" />
+      <point x="-19.714285714285722" y="71.0" />
+    </edge>
+    <edge source="com.project.model.Doctor" target="com.project.model.Specialty">
+      <point x="29.41176470588232" y="-104.0" />
+      <point x="381.4683123249299" y="694.0" />
+      <point x="415.48097754726894" y="694.0" />
+      <point x="-88.0" y="60.0" />
+    </edge>
+    <edge source="com.project.model.Patient" target="com.project.model.Account">
+      <point x="-114.5833333333332" y="-115.0" />
+      <point x="77.89764421393573" y="232.0" />
+      <point x="72.14285714285711" y="232.0" />
+      <point x="0.0" y="71.0" />
+    </edge>
+    <edge source="com.project.model.AvailableServices" target="com.project.model.Specialty">
+      <point x="60.66666666666663" y="60.0" />
+      <point x="564.1476442139356" y="507.0" />
+      <point x="591.4809775472689" y="507.0" />
+      <point x="88.0" y="-60.0" />
+    </edge>
+    <edge source="com.project.model.Specialty" target="com.project.model.Doctor">
+      <point x="0.0" y="60.0" />
+      <point x="503.48097754726894" y="704.0" />
+      <point x="396.1741946778711" y="704.0" />
+      <point x="44.117647058823536" y="-104.0" />
+    </edge>
+    <edge source="com.project.model.Doctor" target="com.project.model.MedicalHistory">
+      <point x="0.0" y="-104.0" />
+      <point x="352.0565476190476" y="754.0" />
+      <point x="349.98097754726894" y="754.0" />
+      <point x="349.98097754726894" y="172.0" />
+      <point x="340.38768710609236" y="172.0" />
+      <point x="49.375" y="60.0" />
+    </edge>
+    <edge source="com.project.model.Appointment" target="com.project.model.Patient">
+      <point x="-62.25" y="-71.0" />
+      <point x="128.31924019607845" y="507.0" />
+      <point x="98.73097754726894" y="507.0" />
+      <point x="-93.75" y="115.0" />
+    </edge>
+    <edge source="com.project.model.Prescription" target="com.project.model.Patient">
+      <point x="-30.0" y="71.0" />
+      <point x="598.5253796831232" y="222.0" />
+      <point x="286.23097754726894" y="222.0" />
+      <point x="93.75" y="-115.0" />
+    </edge>
+    <edge source="com.project.model.Prescription" target="com.project.model.Doctor">
+      <point x="50.0" y="71.0" />
+      <point x="678.5253796831232" y="222.0" />
+      <point x="667.9809775472689" y="222.0" />
+      <point x="667.9809775472689" y="744.0" />
+      <point x="454.9977240896359" y="744.0" />
+      <point x="102.94117647058829" y="-104.0" />
+    </edge>
+    <edge source="com.project.model.Doctor" target="com.project.model.Prescription">
+      <point x="117.64705882352939" y="-104.0" />
+      <point x="469.703606442577" y="754.0" />
+      <point x="678.9809775472689" y="754.0" />
+      <point x="681.3311901487381" y="233.17510630073448" />
+      <point x="698.5253796831232" y="232.0" />
+      <point x="70.0" y="71.0" />
+    </edge>
+    <edge source="com.project.model.MedicalHistory" target="com.project.model.Patient">
+      <point x="-29.625" y="60.0" />
+      <point x="261.38768710609236" y="182.0" />
+      <point x="202.89764421393562" y="182.0" />
+      <point x="10.416666666666686" y="-115.0" />
+    </edge>
+    <edge source="com.project.model.Patient" target="com.project.model.Appointment">
+      <point x="31.25" y="115.0" />
+      <point x="223.73097754726894" y="507.0" />
+      <point x="211.31924019607845" y="507.0" />
+      <point x="20.75" y="-71.0" />
+    </edge>
+    <edge source="com.project.model.MedicalHistory" target="com.project.model.Doctor">
+      <point x="69.125" y="60.0" />
+      <point x="360.98097754726894" y="754.0" />
+      <point x="366.7624299719888" y="754.0" />
+      <point x="14.705882352941217" y="-104.0" />
+    </edge>
+    <edge source="com.project.model.Appointment" target="com.project.model.Doctor">
+      <point x="20.75" y="71.0" />
+      <point x="211.31924019607845" y="714.0" />
+      <point x="293.23301820728295" y="714.0" />
+      <point x="-58.82352941176464" y="-104.0" />
+    </edge>
+    <edge source="com.project.model.Nurse" target="com.project.model.Doctor">
+      <point x="39.25" y="-82.0" />
+      <point x="228.3045069590336" y="1007.0" />
+      <point x="352.0565476190476" y="1007.0" />
+      <point x="0.0" y="104.0" />
+    </edge>
+    <edge source="com.project.model.Account" target="com.project.model.Doctor">
+      <point x="-39.428571428571445" y="71.0" />
+      <point x="32.714285714285666" y="754.0" />
+      <point x="234.40948879551829" y="754.0" />
+      <point x="-117.64705882352928" y="-104.0" />
+    </edge>
+    <edge source="com.project.model.Patient" target="com.project.model.MedicalHistory">
+      <point x="-31.249999999999943" y="-115.0" />
+      <point x="161.230977547269" y="162.0" />
+      <point x="221.8876871060924" y="162.0" />
+      <point x="-69.125" y="60.0" />
+    </edge>
+    <edge source="com.project.model.Doctor" target="com.project.model.Appointment">
+      <point x="-88.23529411764696" y="-104.0" />
+      <point x="263.82125350140063" y="734.0" />
+      <point x="128.31924019607845" y="734.0" />
+      <point x="-62.25" y="71.0" />
+    </edge>
+    <edge source="com.project.model.Account" target="com.project.model.Patient">
+      <point x="39.42857142857139" y="71.0" />
+      <point x="111.5714285714285" y="232.0" />
+      <point x="119.56431088060236" y="232.0" />
+      <point x="-72.91666666666657" y="-115.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.7509868421052631" x="435.04482409990567" y="483.6900322141296" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
